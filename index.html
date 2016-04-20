@@ -5,15 +5,19 @@
     <title>Aula 11</title>
   </head>
   <body>
-    <button onclick="myFunction()">Concatena</button>
-    <p id="demo"></p>
+    <button onclick="myFunction1()">Concatena</button>
+    <p id="demo1"></p>
+    <!--Os valores para as funções foi escolhido assim para um caso teste-->
+    <button onclick="myFunction2('e',[NaN,2,NaN],isNaN)">E</button><button onclick="myFunction2('ou',[NaN,1,2],isNaN)">OU</button>
+    <p id="demo2"></p>
   </body>
   <script type="text/javascript">
-  function myFunction() {
+  //  Codigos para o primeiro exercício!
+  function myFunction1() {
     var arrays = [[1,2,3],[4,5],[6]];
     console.log(arrays);
     var res = achata(arrays);
-    document.getElementById("demo").innerHTML = res;
+    document.getElementById("demo1").innerHTML = res;
     console.log(res);
   }
   var achata = function(arrays){
@@ -23,6 +27,24 @@
     }
     return res;
   }
+  //  Fim dos codigos para o primeiro exercício!
+
+  // Códigos para o Segundo exercício!
+  function myFunction2(boolType, vet, func){
+    if(boolType=='e'){
+      if(func(vet[0])&&func(vet[1])&&func(vet[2]))
+        document.getElementById("demo2").innerHTML = "true";
+      else
+        document.getElementById("demo2").innerHTML = "false";
+    }
+    else{
+      if(func(vet[0])||func(vet[1])||func(vet[2]))
+        document.getElementById("demo2").innerHTML = "true";
+      else
+        document.getElementById("demo2").innerHTML = "false";
+    }
+    }
+  // Fim dos códigos para o segundo exercício!
   </script>
 
 </html>
