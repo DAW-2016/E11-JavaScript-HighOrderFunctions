@@ -1,4 +1,4 @@
-## JavaScript: Exercícios - Funções de Alta Ordem
+``## JavaScript: Exercícios - Funções de Alta Ordem
 
 **Desenvolvimento de Aplicações Web - COLTEC/MG**
 
